@@ -12,7 +12,9 @@ namespace ConsoleCounter
             string comando;
             bool continuar = true;
 
-            Console.WriteLine("Type + to increase count or - to decrease it. To stop type S");
+            Console.Write("From what number should the count start from?\t");
+            contador = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Type + to increase count or - to decrease it. To stop type any other key.");
             while (continuar == true)
             {
 
